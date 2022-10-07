@@ -1,19 +1,15 @@
 import { createRoot } from "react-dom/client";
 import React from "react";
-import { Canvas } from "@react-three/fiber";
+import { BrowserRouter } from 'react-router-dom';
 import reportWebVitals from "./reportWebVitals";
-import { OrbitControls } from "@react-three/drei";
-import Card from "components/Card";
 import "./index.css";
+import App from "App";
 
 createRoot(document.getElementById("root") as HTMLElement).render(
   <React.Suspense fallback={null}>
-    <Canvas shadows camera={{ fov: 70, position: [0, 0, 10] }}>
-      <ambientLight />
-      <pointLight position={[10, 10, 10]} intensity={1.5} decay={2} castShadow />
-      <Card />
-      <OrbitControls makeDefault={true} enablePan={false} target={[0, 0, 0]} />
-    </Canvas>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
   </React.Suspense>
 );
 

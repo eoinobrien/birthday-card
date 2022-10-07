@@ -67,3 +67,5 @@ export default function Balloon({
     </group>
   );
 }
+
+useGLTF.preload("/models/baloon.gltf");
