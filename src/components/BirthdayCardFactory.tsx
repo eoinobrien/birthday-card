@@ -13,7 +13,7 @@ export default function BirthdayCardFactory(card: CardProps) {
         castShadow
       />
       <Card {...card} />
-      <OrbitControls makeDefault={true} enablePan={false} target={[0, 0, 0]} />
+      <OrbitControls makeDefault={true} enablePan={true} target={[0, 0, 0]} />
     </Canvas>
   );
 }
