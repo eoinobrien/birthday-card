@@ -4,7 +4,7 @@ import Card, { CardProps } from "./Card";
 
 export default function BirthdayCardFactory(card: CardProps) {
   return (
-    <Canvas shadows camera={{ fov: 70, position: [0, 0, 10] }}>
+    <Canvas shadows camera={{ fov: 100, position: [0, 0, 10] }}>
       <ambientLight />
       <pointLight
         position={[10, 10, 10]}
