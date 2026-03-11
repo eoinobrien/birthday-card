@@ -34,6 +34,7 @@
       "react-app/jest"
     ]
   },
+  "packageManager": "yarn@1.22.22",
   "browserslist": {
     "production": [
       ">0.2%",
