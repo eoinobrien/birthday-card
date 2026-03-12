@@ -4,6 +4,12 @@
 /node_modules
 /.pnp
 .pnp.js
+.pnp.cjs
+.pnp.loader.mjs
+
+# yarn
+.yarn/cache
+.yarn/install-state.gz
 
 # testing
 /coverage
